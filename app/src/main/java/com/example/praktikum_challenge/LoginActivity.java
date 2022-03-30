@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "login berhasil", Toast.LENGTH_SHORT).show();
                     startActivity(intent);
                 }else{
-                    Toast.makeText(LoginActivity.this, "Email dan Password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "login gagal", Toast.LENGTH_SHORT).show();
                 }
             }
         });
