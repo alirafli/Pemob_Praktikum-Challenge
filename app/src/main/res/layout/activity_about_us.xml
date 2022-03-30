@@ -1,0 +1,243 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tertiary"
+        tools:context=".AboutUsActivity">
+
+        <LinearLayout
+            android:id="@+id/sec1"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ali"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"/>
+
+                    <TextView
+                        android:text="M.Ali Rafli"
+                        android:fontFamily="@font/gothammedium"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="alirafli_"
+                        android:fontFamily="@font/gothamlight"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/dapa"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"/>
+
+                    <TextView
+                        android:text="Daffa Yanuardhana"
+                        android:fontFamily="@font/gothammedium"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="daffayanuardhana"
+                        android:fontFamily="@font/gothamlight"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ali"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"/>
+
+                    <TextView
+                        android:text="M.Ali Rafli"
+                        android:fontFamily="@font/gothammedium"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="alirafli_"
+                        android:fontFamily="@font/gothamlight"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/dapa"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"/>
+
+                    <TextView
+                        android:text="Daffa Yanuardhana"
+                        android:fontFamily="@font/gothammedium"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="daffayanuardhana"
+                        android:fontFamily="@font/gothamlight"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/photo_5"
+            android:src="@drawable/dapa"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/sec1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:id="@+id/txt_5"
+            android:text="Daffa Yanuardhana"
+            android:fontFamily="@font/gothammedium"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/photo_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/ig_5"
+            android:text="daffayanuardhana"
+            android:fontFamily="@font/gothamlight"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            app:layout_constraintTop_toBottomOf="@id/ig_5"
+            android:orientation="vertical"
+            android:background="#591DB954"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Contact Us"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gothambold"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:src="@drawable/contacts"
+                android:layout_marginStart="50dp"
+                android:layout_width="300dp"
+                android:layout_height="150dp"/>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
