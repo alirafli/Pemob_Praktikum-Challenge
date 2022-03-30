@@ -7,9 +7,7 @@
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="0dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/tertiary"
@@ -37,12 +35,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
-                    <ImageView
-                        android:src="@drawable/ali"
+                    <ImageButton
+                        android:id="@+id/photo_1"
+                        android:clickable="true"
+                        android:onClick="open"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
                         android:layout_marginHorizontal="20dp"
                         android:layout_marginBottom="10dp"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"/>
+                        android:background="@drawable/round_btt"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ali" />
 
                     <TextView
                         android:text="M.Ali Rafli"
@@ -53,7 +56,7 @@
                         android:layout_height="wrap_content"/>
 
                     <TextView
-                        android:text="alirafli_"
+                        android:text="IG : alirafli_"
                         android:fontFamily="@font/gothamlight"
                         android:textColor="@color/white"
                         android:layout_gravity="center"
@@ -69,7 +72,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/photo_3"
+                        android:background="@drawable/round_btt"
+                        android:scaleType="fitCenter"
                         android:src="@drawable/dapa"
                         android:layout_marginHorizontal="20dp"
                         android:layout_marginBottom="10dp"
@@ -85,7 +91,7 @@
                         android:layout_height="wrap_content"/>
 
                     <TextView
-                        android:text="daffayanuardhana"
+                        android:text="IG : daffayanuardhana"
                         android:fontFamily="@font/gothamlight"
                         android:textColor="@color/white"
                         android:layout_gravity="center"
@@ -108,7 +114,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/photo_2"
+                        android:background="@drawable/round_btt"
+                        android:scaleType="fitCenter"
                         android:src="@drawable/ali"
                         android:layout_marginHorizontal="20dp"
                         android:layout_marginBottom="10dp"
@@ -124,7 +133,7 @@
                         android:layout_height="wrap_content"/>
 
                     <TextView
-                        android:text="alirafli_"
+                        android:text="IG : alirafli_"
                         android:fontFamily="@font/gothamlight"
                         android:textColor="@color/white"
                         android:layout_gravity="center"
@@ -140,7 +149,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/photo_4"
+                        android:background="@drawable/round_btt"
+                        android:scaleType="fitCenter"
                         android:src="@drawable/dapa"
                         android:layout_marginHorizontal="20dp"
                         android:layout_marginBottom="10dp"
@@ -156,7 +168,7 @@
                         android:layout_height="wrap_content"/>
 
                     <TextView
-                        android:text="daffayanuardhana"
+                        android:text="IG : daffayanuardhana"
                         android:fontFamily="@font/gothamlight"
                         android:textColor="@color/white"
                         android:layout_gravity="center"
@@ -170,8 +182,10 @@
 
         </LinearLayout>
 
-        <ImageView
+        <ImageButton
             android:id="@+id/photo_5"
+            android:background="@drawable/round_btt"
+            android:scaleType="fitCenter"
             android:src="@drawable/dapa"
             android:layout_marginHorizontal="20dp"
             android:layout_marginBottom="10dp"
@@ -196,7 +210,7 @@
 
         <TextView
             android:id="@+id/ig_5"
-            android:text="daffayanuardhana"
+            android:text="IG : daffayanuardhana"
             android:fontFamily="@font/gothamlight"
             android:textColor="@color/white"
             android:layout_gravity="center"
