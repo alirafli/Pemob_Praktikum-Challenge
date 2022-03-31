@@ -60,6 +60,7 @@
 
     <EditText
         android:id="@+id/password"
+        android:inputType="textPassword"
         android:layout_width="273dp"
         android:layout_height="36dp"
         android:background="@drawable/input"
