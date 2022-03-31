@@ -5,7 +5,11 @@
       <map>
         <entry key="..\:/Lain-lain/Aplikasi/AndroidStudioProjects/Pemob_Praktikum-Challenge/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1965" />
         <entry key="..\:/Lain-lain/Aplikasi/AndroidStudioProjects/Pemob_Praktikum-Challenge/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/rheza/AndroidStudioProjects/Pemob_Praktikum-Challenge/app/src/main/res/drawable/shapedetail.xml" value="0.141" />
+        <entry key="..\:/Users/rheza/AndroidStudioProjects/Pemob_Praktikum-Challenge/app/src/main/res/layout/activity_detail_buku.xml" value="0.264" />
+        <entry key="..\:/Users/rheza/AndroidStudioProjects/Pemob_Praktikum-Challenge/app/src/main/res/layout/activity_homepage.xml" value="0.1265625" />
         <entry key="..\:/Users/rheza/AndroidStudioProjects/Pemob_Praktikum-Challenge/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/rheza/AndroidStudioProjects/Pemob_Praktikum-Challenge/app/src/main/res/layout/list_item.xml" value="0.22327898550724637" />
       </map>
     </option>
   </component>
