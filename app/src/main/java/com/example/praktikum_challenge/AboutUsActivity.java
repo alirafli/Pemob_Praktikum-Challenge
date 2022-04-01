@@ -8,14 +8,37 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.example.praktikum_challenge.databinding.ActivityAboutUsBinding;
+import com.example.praktikum_challenge.databinding.ActivityDetailBukuBinding;
+
 public class AboutUsActivity extends AppCompatActivity {
+    ActivityAboutUsBinding binding;
 
     private ImageButton p1, p2, p3, p4, p5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about_us);
+        binding = ActivityAboutUsBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        binding.buttonNavigationView.setOnItemReselectedListener(item -> {
+            switch (item.getItemId()) {
+                case R.id.home:
+                    Intent intent = new Intent(AboutUsActivity.this, HomepageActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.aboutUs:
+                    Intent intent1 = new Intent(AboutUsActivity.this, AboutUsActivity.class);
+                    startActivity(intent1);
+                    break;
+                case R.id.search:
+                    Intent intent2 = new Intent(AboutUsActivity.this, HomepageActivity.class);
+                    startActivity(intent2);
+                    break;
+            }
+        });
+
         p1 = findViewById(R.id.photo_1);
         p2 = findViewById(R.id.photo_2);
         p3 = findViewById(R.id.photo_3);

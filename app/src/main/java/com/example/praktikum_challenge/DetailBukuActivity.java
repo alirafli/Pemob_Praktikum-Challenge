@@ -2,17 +2,41 @@ package com.example.praktikum_challenge;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.praktikum_challenge.databinding.ActivityDetailBukuBinding;
 
 public class DetailBukuActivity extends AppCompatActivity {
+    ActivityDetailBukuBinding binding;
     TextView judul1, penulis1, rating1, publication1, page1, publisher1, sinopsis1;
     ImageView image1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_buku);
+        binding = ActivityDetailBukuBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        binding.buttonNavigationView.setOnItemReselectedListener(item -> {
+            switch (item.getItemId()) {
+                case R.id.home:
+                    Intent intent = new Intent(DetailBukuActivity.this, HomepageActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.aboutUs:
+                    Intent intent1 = new Intent(DetailBukuActivity.this, AboutUsActivity.class);
+                    startActivity(intent1);
+                    break;
+                case R.id.search:
+                    Intent intent2 = new Intent(DetailBukuActivity.this, HomepageActivity.class);
+                    startActivity(intent2);
+                    break;
+            }
+        });
+
         judul1 = findViewById(R.id.judul);
         penulis1 = findViewById(R.id.penulis);
         rating1 = findViewById(R.id.rating);
