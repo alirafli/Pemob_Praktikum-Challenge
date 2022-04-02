@@ -33,7 +33,7 @@ public class AboutUsActivity extends AppCompatActivity {
                     startActivity(intent1);
                     break;
                 case R.id.search:
-                    Intent intent2 = new Intent(AboutUsActivity.this, HomepageActivity.class);
+                    Intent intent2 = new Intent(AboutUsActivity.this, MaintenanceActivity.class);
                     startActivity(intent2);
                     break;
             }
