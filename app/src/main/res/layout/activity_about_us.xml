@@ -48,7 +48,7 @@
                         android:src="@drawable/ali" />
 
                     <TextView
-                        android:text="M.Ali Rafli"
+                        android:text="Moh. Ali Rafli"
                         android:fontFamily="@font/gothammedium"
                         android:textColor="@color/white"
                         android:layout_gravity="center"
@@ -118,14 +118,14 @@
                         android:id="@+id/photo_2"
                         android:background="@drawable/round_btt"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ali"
+                        android:src="@drawable/rheza"
                         android:layout_marginHorizontal="20dp"
                         android:layout_marginBottom="10dp"
                         android:layout_width="150dp"
                         android:layout_height="150dp"/>
 
                     <TextView
-                        android:text="M.Ali Rafli"
+                        android:text="Rheza Firmandha"
                         android:fontFamily="@font/gothammedium"
                         android:textColor="@color/white"
                         android:layout_gravity="center"
@@ -133,7 +133,7 @@
                         android:layout_height="wrap_content"/>
 
                     <TextView
-                        android:text="IG : alirafli_"
+                        android:text="IG : rheza.frmdha"
                         android:fontFamily="@font/gothamlight"
                         android:textColor="@color/white"
                         android:layout_gravity="center"
@@ -153,14 +153,14 @@
                         android:id="@+id/photo_4"
                         android:background="@drawable/round_btt"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/dapa"
+                        android:src="@drawable/daniel"
                         android:layout_marginHorizontal="20dp"
                         android:layout_marginBottom="10dp"
                         android:layout_width="150dp"
                         android:layout_height="150dp"/>
 
                     <TextView
-                        android:text="Daffa Yanuardhana"
+                        android:text="Daniel Sasongko"
                         android:fontFamily="@font/gothammedium"
                         android:textColor="@color/white"
                         android:layout_gravity="center"
@@ -168,7 +168,7 @@
                         android:layout_height="wrap_content"/>
 
                     <TextView
-                        android:text="IG : daffayanuardhana"
+                        android:text="IG : danielsasongko"
                         android:fontFamily="@font/gothamlight"
                         android:textColor="@color/white"
                         android:layout_gravity="center"
@@ -186,7 +186,7 @@
             android:id="@+id/photo_5"
             android:background="@drawable/round_btt"
             android:scaleType="fitCenter"
-            android:src="@drawable/dapa"
+            android:src="@drawable/yona"
             android:layout_marginHorizontal="20dp"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="20dp"
@@ -198,19 +198,20 @@
 
         <TextView
             android:id="@+id/txt_5"
-            android:text="Daffa Yanuardhana"
+            android:text="Alfrenanda Yonathan"
             android:fontFamily="@font/gothammedium"
             android:textColor="@color/white"
             android:layout_gravity="center"
             app:layout_constraintTop_toBottomOf="@id/photo_5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <TextView
             android:id="@+id/ig_5"
-            android:text="IG : daffayanuardhana"
+            android:text="IG : alfrenanday"
             android:fontFamily="@font/gothamlight"
             android:textColor="@color/white"
             android:layout_gravity="center"
