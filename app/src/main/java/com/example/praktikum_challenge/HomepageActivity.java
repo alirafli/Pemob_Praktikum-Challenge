@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.praktikum_challenge.databinding.ActivityAboutUsBinding;
@@ -21,6 +22,7 @@ import java.util.ArrayList;
 
 public class HomepageActivity extends AppCompatActivity {
     ActivityHomepageBinding binding;
+    TextView title;
     ArrayList<Buku> bukuArrayList = new ArrayList<>();
     RecyclerView recyclerView;
     AdapaterRecycleView adapaterRecycleView;
@@ -30,6 +32,10 @@ public class HomepageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityHomepageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        title = findViewById(R.id.title);
+        Intent getData = getIntent();
+        title.setText("Hi, " + getData.getStringExtra("EMAIL"));
 
         binding.buttonNavigationView.setOnItemReselectedListener(item -> {
             switch (item.getItemId()) {
@@ -42,7 +48,7 @@ public class HomepageActivity extends AppCompatActivity {
                     startActivity(intent1);
                     break;
                 case R.id.search:
-                    Intent intent2 = new Intent(HomepageActivity.this, HomepageActivity.class);
+                    Intent intent2 = new Intent(HomepageActivity.this, MaintenanceActivity.class);
                     startActivity(intent2);
                     break;
             }

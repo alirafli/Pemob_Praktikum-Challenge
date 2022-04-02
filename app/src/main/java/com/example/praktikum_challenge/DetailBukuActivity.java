@@ -31,7 +31,7 @@ public class DetailBukuActivity extends AppCompatActivity {
                     startActivity(intent1);
                     break;
                 case R.id.search:
-                    Intent intent2 = new Intent(DetailBukuActivity.this, HomepageActivity.class);
+                    Intent intent2 = new Intent(DetailBukuActivity.this, MaintenanceActivity.class);
                     startActivity(intent2);
                     break;
             }
