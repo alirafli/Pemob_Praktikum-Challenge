@@ -10,20 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Praktikum_challenge">
         <activity
-            android:name=".BottomBarActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DetailBukuActivity"
-            android:exported="false">
-
-        </activity>
-        <activity
-            android:name=".AboutUsActivity"
-            android:exported="false">
-
-        </activity>
-        <activity
-            android:name=".LoginActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,10 +19,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HomepageActivity"
+            android:name=".BottomBarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailBukuActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".LoginActivity"
             android:exported="false">
-
         </activity>
+        <activity
+            android:name=".HomepageActivity"
+            android:exported="false"></activity>
     </application>
 
 </manifest>
