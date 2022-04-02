@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tertiary"
+    tools:context=".MaintenanceActivity">
+    
+    <ImageView
+        android:id="@+id/jumbotron"
+        android:layout_width="340dp"
+        android:layout_height="213dp"
+        android:src="@drawable/jumbotron"
+        tools:ignore="ContentDescription"
+        android:layout_marginTop="196dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="391dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textview"
+        android:text="@string/maintenance_txt"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/gothammedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jumbotron" />
+
+    <TextView
+        android:id="@+id/textview2"
+        app:layout_constraintTop_toBottomOf="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="@string/mt_text"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/gothamlight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:text="@string/maintenance_btn"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_width="242dp"
+        android:layout_height="41dp"
+        android:id="@+id/homepage_btn"
+        android:background="@drawable/maintenance_btn"
+        app:layout_constraintTop_toBottomOf="@+id/textview2"
+        android:layout_marginTop="46dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginRight="53dp"
+        android:layout_marginBottom="213dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
