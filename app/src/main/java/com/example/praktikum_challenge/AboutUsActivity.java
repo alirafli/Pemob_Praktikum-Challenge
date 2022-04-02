@@ -58,7 +58,7 @@ public class AboutUsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent ig2 = new Intent(Intent.ACTION_VIEW);
-                ig2.setData(Uri.parse("https://www.instagram.com/alirafli_/"));
+                ig2.setData(Uri.parse("https://www.instagram.com/rheza.frmdha/"));
                 startActivity(ig2);
             }
         });
@@ -76,7 +76,7 @@ public class AboutUsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent ig4 = new Intent(Intent.ACTION_VIEW);
-                ig4.setData(Uri.parse("https://www.instagram.com/alirafli_/"));
+                ig4.setData(Uri.parse("https://www.instagram.com/danielsasongko/"));
                 startActivity(ig4);
             }
         });
@@ -85,7 +85,7 @@ public class AboutUsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent ig5 = new Intent(Intent.ACTION_VIEW);
-                ig5.setData(Uri.parse("https://www.instagram.com/alirafli_/"));
+                ig5.setData(Uri.parse("https://www.instagram.com/alfrenanday/"));
                 startActivity(ig5);
             }
         });
