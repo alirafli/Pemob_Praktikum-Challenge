@@ -22,6 +22,9 @@ public class MaintenanceActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MaintenanceActivity.this, HomepageActivity.class);
+                Intent getdata = getIntent();
+                String data = getdata.getStringExtra("EMAIL");
+                intent.putExtra("EMAIL", data);
                 startActivity(intent);
             }
         });

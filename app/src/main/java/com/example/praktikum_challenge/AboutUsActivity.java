@@ -26,14 +26,23 @@ public class AboutUsActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.home:
                     Intent intent = new Intent(AboutUsActivity.this, HomepageActivity.class);
+                    Intent getdata = getIntent();
+                    String data = getdata.getStringExtra("EMAIL");
+                    intent.putExtra("EMAIL", data);
                     startActivity(intent);
                     break;
                 case R.id.aboutUs:
                     Intent intent1 = new Intent(AboutUsActivity.this, AboutUsActivity.class);
+                    Intent getdata1 = getIntent();
+                    String data1 = getdata1.getStringExtra("EMAIL");
+                    intent1.putExtra("EMAIL", data1);
                     startActivity(intent1);
                     break;
                 case R.id.search:
                     Intent intent2 = new Intent(AboutUsActivity.this, MaintenanceActivity.class);
+                    Intent getdata2 = getIntent();
+                    String data2 = getdata2.getStringExtra("EMAIL");
+                    intent2.putExtra("EMAIL", data2);
                     startActivity(intent2);
                     break;
             }

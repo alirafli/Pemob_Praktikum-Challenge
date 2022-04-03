@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (email.equals(email) && password.equals("admin")){
                     Intent intent = new Intent(LoginActivity.this, HomepageActivity.class);
-                    intent.putExtra("EMAIL", email);
+                    intent.putExtra("EMAIL", "Hi " + email);
                     Toast.makeText(LoginActivity.this, "login berhasil", Toast.LENGTH_SHORT).show();
                     startActivity(intent);
                 }else{
