@@ -1,5 +1,6 @@
 package com.example.praktikum_challenge;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -35,20 +36,24 @@ public class HomepageActivity extends AppCompatActivity {
 
         title = findViewById(R.id.title);
         Intent getData = getIntent();
-        title.setText("Hi, " + getData.getStringExtra("EMAIL"));
+        String data = getData.getStringExtra("EMAIL");
+        title.setText(data);
 
         binding.buttonNavigationView.setOnItemReselectedListener(item -> {
             switch (item.getItemId()) {
                 case R.id.home:
                     Intent intent = new Intent(HomepageActivity.this, HomepageActivity.class);
+                    intent.putExtra("EMAIL", title.getText());
                     startActivity(intent);
                     break;
                 case R.id.aboutUs:
                     Intent intent1 = new Intent(HomepageActivity.this, AboutUsActivity.class);
+                    intent1.putExtra("EMAIL", title.getText());
                     startActivity(intent1);
                     break;
                 case R.id.search:
                     Intent intent2 = new Intent(HomepageActivity.this, MaintenanceActivity.class);
+                    intent2.putExtra("EMAIL", title.getText());
                     startActivity(intent2);
                     break;
             }
@@ -62,6 +67,23 @@ public class HomepageActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapaterRecycleView);
         tambahData();
+        if (savedInstanceState != null){
+          String data1 = savedInstanceState.getString("EMAIL");
+            title.setText(data);
+        }
+    }
+
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+       super.onSaveInstanceState(outState);
+       outState.putString("EMAIL", title.getText().toString());
+    }
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        String store_data = savedInstanceState.getString("EMAIL");
+        title.setText(store_data);
     }
 
     public void tambahData() {

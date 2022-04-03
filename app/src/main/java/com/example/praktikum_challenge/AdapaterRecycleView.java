@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 public class AdapaterRecycleView extends RecyclerView.Adapter<AdapaterRecycleView.AdapterViewHolder> {
     ArrayList<Buku> bukuArrayList ;
+    HomepageActivity homepageActivity;
 
     public AdapaterRecycleView(ArrayList<Buku> bukuArrayList) {
         this.bukuArrayList = bukuArrayList;

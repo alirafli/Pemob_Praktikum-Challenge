@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.example.praktikum_challenge.databinding.ActivityDetailBukuBinding;
 
 public class DetailBukuActivity extends AppCompatActivity {
+    HomepageActivity homepageActivity;
     ActivityDetailBukuBinding binding;
     TextView judul1, penulis1, rating1, publication1, page1, publisher1, sinopsis1;
     ImageView image1;
@@ -24,6 +25,7 @@ public class DetailBukuActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.home:
                     Intent intent = new Intent(DetailBukuActivity.this, HomepageActivity.class);
+                    intent.putExtra("EMAIL", homepageActivity.title.getText());
                     startActivity(intent);
                     break;
                 case R.id.aboutUs:
